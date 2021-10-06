@@ -83,3 +83,49 @@
     - display system config
 
       `git config --system --list`
+
+3.  **Staging**
+
+    - add file to staging area
+
+      `git add file.txt`
+
+    - add multiple files to staging area
+
+      `git add file.txt file1.txt`
+
+    - add all files to staging area
+
+      `git add .`
+
+    - add pattern of files
+
+      `git add \*.txt`
+
+    - remove all files from staging area
+
+      `git reset HEAD`
+
+    - display files in staging area
+
+      `git ls-files`
+
+    - remove file from staging area and from working directory
+
+      `git rm file.txt`
+
+    - move files from working directory and staging area
+
+      `git mv file.txt`
+
+    - view staged changes
+
+      `git diff --staged`
+
+    - view staged changes in diff tool
+
+      `git difftool --staged`
+
+    * unstage file
+
+      `git restore --staged file.txt`
