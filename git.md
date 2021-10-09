@@ -129,3 +129,99 @@
     * unstage file
 
       `git restore --staged file.txt`
+
+4.  **Commit**
+
+    - commit changes
+
+      `git commit -m "commit message"`
+
+    * skip staging area and directly commit
+
+      `git commit -am "commit message"`
+
+    * commit message with title and description
+
+      `git commit -m "Title" -m "Description..."`
+
+    * commit all local changes
+
+      `git commit -a`
+
+    * commit message with description
+
+      `git commit -m "Initial Commit" -m "Description"`
+
+    * view commit
+
+      `git show`
+
+    * viewing specific commit
+
+      `git show commitID`
+
+    * viewing all files in commit
+
+      `git ls-tree HEAD~1`
+
+    * view the earlier version of code
+
+      `git checkout commit`
+
+    * view all commits also with the hidden commits
+
+      `git log --oneline --all`
+
+    * Ammending last commit
+
+      `git commit --amend`
+
+    * skip ammending published commits
+
+      `git commit --amend --no-edit`
+
+5.  **Filtering History**
+
+    - The command will show only last 3 commits
+
+      `git log --oneline -3`
+
+    - The command will filter the history by author name
+
+      `git log --oneline --author="Ehsaan"`
+
+    * The command will filter by date
+
+      `git log --oneline --before="2021-04-2"`
+
+      `git log --oneline --after="2021-04-2"`
+
+    * The command will filter by relative dates
+
+      `git log --oneline --after="yesterday"`
+
+      `git log --oneline --after="one week ago"`
+
+    - The command will filter by commit message
+
+      `git log --oneline --grep="fixed scroll"`
+
+    - The command will filter by any code
+
+      `git log --oneline -S"start()"`
+
+    - The command will filter by any code and preview the changes
+
+      `git log --oneline -S"start()" --patch`
+
+    - The command will get data from range of commits
+
+      `git log --oneline commit1..commit2`
+
+    - The command will preview the commits that have modified the particular file
+
+      `git log --oneline file1.txt`
+
+    - The command will preview the commits that have modified the particular file with the changes previewed
+
+      `git log --oneline --patch file1.txt`
