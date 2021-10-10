@@ -225,3 +225,41 @@
     - The command will preview the commits that have modified the particular file with the changes previewed
 
       `git log --oneline --patch file1.txt`
+
+6.  **Removing and Moving files**
+
+    - remove files from working directory and staged area
+
+      `git rm file.txt`
+
+    - remove multiple files from working directory and staged area
+
+      `git rm file.txt file2.txt`
+
+    - remove pattern of files from working directory and staged area
+
+      `git rm \*.js`
+
+    - move files
+
+      `git mv file.txt`
+
+      `git mv file.txt file1.txt`
+
+      `git mv \*.js`
+
+    * rename files
+
+      `git mv file.txt file.js`
+
+    - ignore the file already in staged area
+
+      `git rm --cached file.txt`
+
+    - remove files that were committed before they were added to .gitignore
+
+      `git rm -r --cached .`
+
+    * change an existing file path
+
+      `git mv [existingPath] [newPath]`
