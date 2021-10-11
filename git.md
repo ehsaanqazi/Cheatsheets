@@ -263,3 +263,45 @@
     * change an existing file path
 
       `git mv [existingPath] [newPath]`
+
+7.  **Branches**
+
+    - list all branches
+
+      `git branch`
+
+    * list all merged branches
+
+      `git branch --merged`
+
+    * list all unmerged branches
+
+      `git branch --unmerged`
+
+    * list remote branches
+
+      `git branch -r`
+
+    * list local as well as remote branches
+
+      `git branch -a`
+
+    * create a new branch
+
+      `git branch auth`
+
+    * switch to a branch
+
+      `git switch auth`
+
+    * rename branch
+
+      `git switch -m auth authentication`
+
+    * delete branch
+
+      `git brach -d auth`
+
+    * forcefully delete a branch
+
+      `git branch -D auth`
