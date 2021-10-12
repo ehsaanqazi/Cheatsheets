@@ -305,3 +305,41 @@
     * forcefully delete a branch
 
       `git branch -D auth`
+
+8.  **Merging**
+
+    - merge with fast forward
+
+      `git merge auth`
+
+    - create and switch to new branch
+
+      `git switch -C auth`
+
+    * defines no fast forward merge
+
+      `git merge --no-ff auth`
+
+    * merge only if fast forward
+
+      `git merge --ff-only auth`
+
+    - merge with 3 way merge
+
+      `git merge auth`
+
+    - merge with squash merging
+
+      `git merge --squash auth`
+
+    - aborting a merge
+
+      `git merge --abort`
+
+    - reset changes in working directory, staging area and also in last snapshot
+
+      `git reset --hard HEAD~1`
+
+    * use merge tool to solve conflicts
+
+      `git mergetool`
