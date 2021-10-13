@@ -343,3 +343,59 @@
     * use merge tool to solve conflicts
 
       `git mergetool`
+
+9.  **Diff Commands**
+
+    - view unstaged changes
+
+      `git diff`
+
+    * view staged changes
+
+      `git diff --staged`
+
+    * view staged changes in difftool
+
+      `git difftool`
+
+    * view unstaged changes in difftool
+
+      `git difftool --staged`
+
+    * show changes between two commits
+
+      `git diff HEAD~2 HEAD`
+
+    * show changes of the specified filename
+
+      `git diff HEAD~2 HEAD test.js`
+
+    * show file name only
+
+      `git diff HEAD~2 HEAD --name-only`
+
+    * show file with status
+
+      `git diff HEAD~2 --name-status`
+
+    * diff between branches
+
+      `git diff one..two`
+
+    * compare modified files and display changes
+
+      `git diff --color-words file.js`
+
+    * compare commits
+
+      `git diff commitID..commitID`
+
+10. **Extra Commands**
+
+    - show modified files
+
+      `git status`
+
+    * short status
+
+      `git status -s`
