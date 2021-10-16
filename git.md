@@ -390,7 +390,37 @@
 
       `git diff commitID..commitID`
 
-10. **Extra Commands**
+10. **Tagging**
+
+    - list tags
+
+      `git tag`
+
+    * create a tag
+
+      `git tag v1.0 commitid`
+
+    - create tag with comment
+
+      `git tag -a v1.0.0 -m 'Message'`
+
+    - annoted tags
+
+      `git tag -a v2.0 "Version 2.0"`
+
+    - display all tags
+
+      `git tag`
+
+    - display all tags with message
+
+      `git tag -n`
+
+    - display all released versions
+
+      `git tag -l -n1`
+
+11. **Extra Commands**
 
     - show modified files
 
