@@ -420,7 +420,37 @@
 
       `git tag -l -n1`
 
-11. **Extra Commands**
+11. **Stashing**
+
+    - create a stash
+
+      `git stash push -m "I_am_Coder"`
+
+    * create a stash with a file included
+
+      `git stash push -am "stash"`
+
+    * list stashes
+
+      `git stash list`
+
+    * show changes in a stash
+
+      `git stash show`
+
+    * apply stash to working directory
+
+      `git stash apply`
+
+    * remove stash
+
+      `git stash drop 0`
+
+    * remove all stash
+
+      `git stash clear`
+
+12. **Extra Commands**
 
     - show modified files
 
