@@ -450,7 +450,29 @@
 
       `git stash clear`
 
-12. **Extra Commands**
+12. **Short Logs**
+
+    - display shortlog
+
+      `git shortlog`
+
+    - author with highest commits
+
+      `git shortlog -n`
+
+    * most number of commited author with displaying number of commits
+
+      `git shortlog -n -s`
+
+    * most number of commited author with displaying number of commits and email
+
+      `git shortlog -n -s -e`
+
+    * most number of commited author with displaying number of commits and email withing date range
+
+      `git shortlog -n -s -before || --after`
+
+13. **Extra Commands**
 
     - show modified files
 
