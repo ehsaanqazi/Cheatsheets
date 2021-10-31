@@ -472,7 +472,21 @@
 
       `git shortlog -n -s -before || --after`
 
-13. **Extra Commands**
+13. **Blame**
+
+    - showing all commits
+
+      `git blame file.js`
+
+    * showing commits with email
+
+      `git blame -e file.js`
+
+    * show limited number of commits (3 commits)
+
+      `git blame -e -L 1,3 file.js`
+
+14. **Extra Commands**
 
     - show modified files
 
