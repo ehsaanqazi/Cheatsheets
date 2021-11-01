@@ -495,3 +495,67 @@
     * short status
 
       `git status -s`
+
+    * clone a repository
+
+      `git clone url`
+
+    * clone repository with new name
+
+      `git clone url repoNewName`
+
+    * clone repo via ssh
+
+      `git clone ssh://admin@ehsaanqazi.com/blog.git`
+
+    * clone a branch name
+
+      `git clone -b branchname url`
+
+    * display remote repo
+
+      `git remote`
+
+    * display deatils about remote repo
+
+      `git remote -v`
+
+    * download commits
+
+      `git fetch`
+
+    * pull by 3 way merge
+
+      `git pull`
+
+    * pull by rebassing
+
+      `git pull --rebase`
+
+    * push to remote
+
+      `git push`
+
+    * force push
+
+      `git push --force`
+
+    * add tag to the repo
+
+      `git push origin tagname`
+
+    * delete tag from repo
+
+      `git push origin --delete tagname`
+
+    - push branch name to origin
+
+      `git push -u origin branchname`
+
+    * delete branch name from origin
+
+      `git push -d origin branchname`
+
+    * display help menu
+
+      `git help`
